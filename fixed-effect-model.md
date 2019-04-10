@@ -206,7 +206,7 @@ We need to find $\alpha_{i}$ that minimizes cost function $J(\alpha_{i})$:
 
 $$
 \begin{equation*}
-\min_{a_{i}} J( \alpha _{i}) =\min_{\alpha _{i}}\frac{1}{2m_{i}}\sum ^{m_{i}}_{t=1}\left(\ddot{y_{it}} -y_{it}\right)^{2}
+\min_{a_{i}} J( \alpha _{i}) =\min_{\alpha _{i}}\frac{1}{2m_{i}}\sum ^{m_{i}}_{t=1}\left(\widehat{y_{it}} -y_{it}\right)^{2}
 \end{equation*}
 $$
 
@@ -214,7 +214,7 @@ Take partial derivative of $J(\alpha_{i})$ with respect to $\alpha_{i}$:
 
 $$
 \begin{equation*}
-\frac{\partial }{\partial \alpha _{i}} J( \alpha _{i}) =\frac{\partial }{\partial \alpha _{i}}\left(\frac{1}{2m_{i}}\sum ^{m_{i}}_{t=1}\left(\widehat{y_{it}} -y_{it}\right)^{2}\right) =\frac{1}{m}\sum ^{m_{i}}_{t=1}\left(\widehat{y_{it}} -y_{it}\right)
+\frac{\partial }{\partial \alpha _{i}} J( \alpha _{i}) =\frac{\partial }{\partial \alpha _{i}}\left(\frac{1}{2m_{i}}\sum ^{m_{i}}_{t=1}\left(\widehat{y_{it}} -y_{it}\right)^{2}\right) =\frac{1}{m_{i}}\sum ^{m_{i}}_{t=1}\left(\widehat{y_{it}} -y_{it}\right)
 \end{equation*}
 $$
 
@@ -228,7 +228,7 @@ $$
 
 $$
 \begin{equation*}
-\alpha _{i} =\frac{1}{m}\sum ^{m_{i}}_{t=1}\left( y_{it} -\beta ^{\top } x_{it}\right) =\overline{y_{i}} -\beta ^{\top }\overline{x_{i}}
+\alpha _{i} =\frac{1}{m_{i}}\sum ^{m_{i}}_{t=1}\left( y_{it} -\beta ^{\top } x_{it}\right) =\overline{y_{i}} -\beta ^{\top }\overline{x_{i}}
 \end{equation*}
 $$
 
